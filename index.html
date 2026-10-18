@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <div id="lightbox" class="lightbox" hidden>
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+      </div>
+      <section class="hero-panel">
+        <header class="topbar">
+    <a class="brand" href="#home" aria-label="BarryFA home" data-page="home">
+      <span class="brand-main">EZ</span><span class="brand-accent">N</span>
+    </a>
+
+          <button
+            class="menu-button"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="nav-overlay"
+          >
+            <span></span>
+            <span></span>
+          </button>
+        </header>
+
+        <div class="hero-copy" id="home">
+          <p class="eyebrow">Hello! I’m</p>
+          <h1><span class="hero-rotator" aria-live="polite"></span><span class="cursor">_</span></h1>
+          <p class="intro">
+            Welcome to my portfolio website.
+            <br />
+            Im a 4th year IT student and a aspiring Software Engineer. , I specialize in Javascript, React, and Node.js, and I have a passion for creating web applications.
+
+
+          </p>
+          <a class="cta" href="#contact" data-page="contact">Contact me</a>
+        </div>
+
+        <footer class="hero-footer">
+          <div class="socials" aria-label="Social links">
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="GitHub">gh</a>
+          
+          
+          </div>
+       
+        </footer>
+
+        <div class="decor decor-left"></div>
+        <div class="decor decor-center"></div>
+        <div class="decor decor-right"></div>
+      </section>
+
+      <section class="art-panel" aria-label="Artwork preview">
+        <div class="art-card">
+          <div class="art-sparkles" background="url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd9qrW5Qs8nTjjqWJ50gl4tn_M4Og0rT0dXgXio_b1TA&s=10')"></div>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd9qrW5Qs8nTjjqWJ50gl4tn_M4Og0rT0dXgXio_b1TA&s=10">
+          
+          </div>
+      </section>
+
+      <div class="page-panel" id="page-works" hidden>
+        <div class="page-panel-inner">
+          <header class="page-header">
+            <button class="page-back-btn" aria-label="Go back">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+              <span>Back</span>
+            </button>
+            <h2 class="page-title">Selected Works</h2>
+          </header>
+          <div class="page-content">
+            <div class="content-grid">
+              <article>
+                <div class="work-image">
+                  <img src="images/Handi.png" alt="Handiwork App Screenshot">
+                </div>
+                <h1>Handi App 
+                
+                </h1>
+                  <p>Created in 2026 using React , Django, and Node.js.</p>
+            
+                <p>A comprehensive mobile platform designed to connect local artisans with customers, featuring real-time booking and secure payments.</p>
+              </article>
+              <article>
+                <div class="work-image">
+                  <img src="images/Asphalt.png" alt="Asphalt Management System Screenshot">
+                </div>
+                <h3>Asphalt</h3>
+                <p>Created in 2026 using React , ExpressJS, and Node.js.</p>
+                <p>A web application to ease Car Renting and Purchases.</p>
+              </article>
+              <article>
+                <div class="work-image">
+                  <img src="images/CHR.png" alt="CHR Portal Screenshot">
+                </div>
+                <h3>CHR Portal</h3>
+                <p>Created in 2024 using HTML, CSS, PHP and JavaScript.</p>
+                <p>A web application for easier management of CHR-related tasks and information.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-panel" id="page-contact" hidden>
+        <div class="page-panel-inner">
+          <header class="page-header">
+            <button class="page-back-btn" aria-label="Go back">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+              <span>Back</span>
+            </button>
+            <h2 class="page-title">Get in Touch</h2>
+          </header>
+          <div class="page-content">
+            <div class="contact-info">
+              <p>I'm always open to new opportunities and collaborations.</p>
+              <a href="mailto:hello@example.com" class="email-link">Ezn@testemail.com</a>
+              <div class="socials">
+                <a href="#" aria-label="LinkedIn">in</a>
+                <a href="#" aria-label="GitHub">gh</a>
+        
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="overlay" id="nav-overlay" hidden>
+        <div class="overlay-backdrop" data-close></div>
+        <aside class="overlay-panel" aria-label="Site navigation">
+          <button class="close-button" type="button" aria-label="Close navigation menu" data-close>
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav class="overlay-nav">
+            <a href="#home" class="nav-link" data-page="home">
+              <span>Home</span>
+              <small>Nice to meet you</small>
+            </a>
+            <a href="#works" class="nav-link" data-page="works">
+              <span>Works</span>
+              <small>Creative & professional</small>
+            </a>
+            <a href="#contact" class="nav-link" data-page="contact">
+              <span>Contact</span>
+              <small>Ready to go</small>
+            </a>
+          </nav>
+
+          <div class="overlay-footer">
+            <div class="socials socials-overlay" aria-label="Social links">
+              <a href="#" aria-label="LinkedIn">in</a>
+              <a href="#" aria-label="GitHub">gh</a>
+              <a href="#" aria-label="Dribbble">dr</a>
+              <a href="#" aria-label="Telegram">tg</a>
+            </div>
+  
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <script>
+const menuButton = document.querySelector('.menu-button');
+const overlay = document.getElementById('nav-overlay');
+const heroRotator = document.querySelector('.hero-rotator');
+const menuBars = document.querySelectorAll('.menu-button span');
+const closeTargets = overlay.querySelectorAll('[data-close]');
+const navLinks = document.querySelectorAll('.nav-link, .cta');
+const pagePanels = document.querySelectorAll('.page-panel');
+const pageBackBtns = document.querySelectorAll('.page-back-btn');
+
+const heroPhrases = ['Richlee John Rabusa', '4th Year IT student', 'Name'];
+const typingSpeed = 1;
+let heroPhraseIndex = 0;
+let heroCharacterIndex = 0;
+let isDeleting = false;
+let heroTimerId = null;
+let menuCloseTimerId = null;
+
+function rotateHeroText() {
+  if (!heroRotator) {
+    return;
+  }
+
+  const currentPhrase = heroPhrases[heroPhraseIndex];
+  const nextCharacterCount = isDeleting ? heroCharacterIndex - 1 : heroCharacterIndex + 1;
+
+  heroRotator.textContent = currentPhrase.slice(0, nextCharacterCount);
+  heroCharacterIndex = nextCharacterCount;
+
+  let delay = (isDeleting ? 85 : 120) * typingSpeed;
+
+  if (!isDeleting && heroCharacterIndex === currentPhrase.length) {
+    delay = 1200 * typingSpeed;
+    isDeleting = true;
+  } else if (isDeleting && heroCharacterIndex === 0) {
+    isDeleting = false;
+    heroPhraseIndex = (heroPhraseIndex + 1) % heroPhrases.length;
+    delay = 320 * typingSpeed;
+  }
+
+  heroTimerId = window.setTimeout(rotateHeroText, delay);
+}
+
+function setMenuIconState(isOpen) {
+  if (menuBars.length < 2) {
+    return;
+  }
+
+  if (isOpen) {
+    menuBars[0].style.transform = 'translateY(7px) rotate(45deg)';
+    menuBars[1].style.transform = 'translateY(-7px) rotate(-45deg)';
+  } else {
+    menuBars[0].style.transform = '';
+    menuBars[1].style.transform = '';
+  }
+}
+
+function setMenuOpen(isOpen) {
+  if (menuCloseTimerId) {
+    window.clearTimeout(menuCloseTimerId);
+    menuCloseTimerId = null;
+  }
+
+  if (isOpen) {
+    overlay.hidden = false;
+    overlay.classList.remove('is-closing');
+  } else {
+    overlay.classList.add('is-closing');
+    menuCloseTimerId = window.setTimeout(() => {
+      overlay.hidden = true;
+      overlay.classList.remove('is-closing');
+      menuCloseTimerId = null;
+    }, 320);
+  }
+
+  document.body.classList.toggle('menu-open', isOpen);
+  menuButton.classList.toggle('is-open', isOpen);
+  setMenuIconState(isOpen);
+  menuButton.setAttribute('aria-expanded', String(isOpen));
+  menuButton.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+}
+
+function openPagePanel(panel) {
+
+  pagePanels.forEach(p => {
+    p.classList.remove('is-active');
+    p.hidden = true;
+  });
+  
+  panel.hidden = false;
+
+  panel.offsetHeight;
+  panel.classList.add('is-active');
+  document.body.classList.add('page-open');
+}
+
+function closePagePanel(panel) {
+  panel.classList.remove('is-active');
+  panel.classList.add('is-closing');
+  
+  setTimeout(() => {
+    panel.hidden = true;
+    panel.classList.remove('is-closing');
+    document.body.classList.remove('page-open');
+  }, 400); 
+}
+
+menuButton.addEventListener('click', () => {
+  setMenuOpen(overlay.hidden);
+});
+
+closeTargets.forEach((target) => {
+  target.addEventListener('click', () => setMenuOpen(false));
+});
+
+navLinks.forEach((link) => {
+  link.addEventListener('click', (e) => {
+    const pageName = link.dataset.page;
+    
+    if (pageName === 'home') {
+      if (!overlay.hidden) setMenuOpen(false);
+      pagePanels.forEach(p => {
+        if (!p.hidden) closePagePanel(p);
+      });
+      return;
+    }
+    
+    e.preventDefault();
+    const pagePanel = document.getElementById(`page-${pageName}`);
+    
+    if (pagePanel) {
+      openPagePanel(pagePanel);
+    }
+    
+    if (!overlay.hidden) {
+      setMenuOpen(false);
+    }
+  });
+});
+
+pageBackBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const panel = btn.closest('.page-panel');
+    if (panel) {
+      closePagePanel(panel);
+    }
+  });
+});
+
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const lightboxClose = document.querySelector('.lightbox-close');
+const workImages = document.querySelectorAll('.work-image img');
+
+workImages.forEach(img => {
+  img.addEventListener('click', () => {
+    lightboxImg.src = img.src;
+    lightbox.hidden = false;
+    document.body.style.overflow = 'hidden'; 
+  });
+});
+
+lightbox.addEventListener('click', (e) => {
+  if (e.target !== lightboxImg) {
+    lightbox.hidden = true;
+    document.body.style.overflow = ''; 
+  }
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') {
+    if (!overlay.hidden) {
+      setMenuOpen(false);
+    }
+    
+    // Also close any open page panels
+    pagePanels.forEach(panel => {
+      if (panel.classList.contains('is-active')) {
+        closePagePanel(panel);
+      }
+    });
+
+    if (!lightbox.hidden) {
+      lightbox.hidden = true;
+      document.body.style.overflow = '';
+    }
+  }
+});
+
+if (heroRotator) {
+  heroRotator.textContent = heroPhrases[0];
+}
+
+if (heroTimerId) {
+  window.clearTimeout(heroTimerId);
+}
+
+window.setTimeout(rotateHeroText, 900 * typingSpeed);
+
+setMenuOpen(false);
+    </script>
+  </body>
+</html>
